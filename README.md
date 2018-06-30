@@ -2,16 +2,10 @@
 
 ## Dev set-up
 
-- Install Ruby 2.5
-- Install PostgreSQL
+- Install Ruby, minimum version 2.4
+- Install [SQLite](https://www.sqlite.org/index.html)
 - Check out the project
 - Create a database user:
-
-```
-psql postgres
-create role givememydata with createdb login password 'givememydata';
-\q
-```
 
 - Run `bundle install`
 - Run `rails db:setup`
