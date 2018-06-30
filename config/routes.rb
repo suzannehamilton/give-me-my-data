@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   root to: 'home#index'
 
   get '/find', to: 'organisations#find'
+  get '/about', to: 'about#about'
 
 end
