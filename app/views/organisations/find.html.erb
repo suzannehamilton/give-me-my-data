@@ -1,7 +1,9 @@
 <h1>Find an organisation</h1>
 
-<ul>
-  <% @organisations.each do |key, name| %>
-    <li><%= name %></li>
-  <% end %>
-</ul>
+<%= form_tag("/request-data", method: 'post') do %>
+  <div class="form-group">
+    <label for="organisation name">Find an organisation</label>
+    <input type="text" name="organisation_name" class="form-control organisation-name typeahead" aria-describedby="organisationName" placeholder="Organisation name">
+  </div>
+  <%= submit_tag("Submit", class: "btn btn-primary") %>
+<% end %>
