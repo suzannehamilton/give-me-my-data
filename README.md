@@ -8,7 +8,7 @@
 - Create a database user:
 
 ```
-postgres psql
+psql postgres
 create role givememydata with createdb login password 'givememydata';
 \q
 ```
