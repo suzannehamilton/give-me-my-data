@@ -14,5 +14,6 @@ create role givememydata with createdb login password 'givememydata';
 ```
 
 - Run `bundle install`
+- Run `rails db:setup`
 - Run `rails db:migrate`
 - Run `rails server` to start the all
