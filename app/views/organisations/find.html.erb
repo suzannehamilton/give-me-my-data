@@ -1,5 +1,12 @@
 <h1>Find an organisation</h1>
 
+<form>
+  <div class="form-group">
+    <label for="organisation name">Find an organisation</label>
+    <input type="text" class="form-control organisation-name typeahead" aria-describedby="organisationName" placeholder="Organisation name">
+  </div>
+</form>
+
 <ul>
   <% @organisations.each do |key, name| %>
     <li><%= name %></li>
