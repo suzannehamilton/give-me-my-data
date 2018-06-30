@@ -7,7 +7,6 @@ ruby '>= 2.4.0'
 gem 'rails', '~> 5.2.0'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
-gem 'sqlite3', '~> 1.3.11'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -49,6 +48,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'sqlite3', '~> 1.3.11'
 end
 
 group :test do
