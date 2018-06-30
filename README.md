@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Dev set-up
 
-Things you may want to cover:
+- Install Ruby 2.5
+- Install PostgreSQL
+- Check out the project
+- Create a database user:
 
-* Ruby version
+```
+postgres psql
+create role givememydata with createdb login password 'givememydata';
+\q
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Run `bundle install`
+- Run `rails db:migrate`
+- Run `rails server` to start the all
