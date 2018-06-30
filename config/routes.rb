@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   get '/find', to: 'organisations#find'
   post '/request-data', to: 'form#show'
+
+  get '/about', to: 'about#about'
 end
