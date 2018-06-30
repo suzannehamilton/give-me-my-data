@@ -1,1 +1,7 @@
 <h1>Find an organisation</h1>
+
+<ul>
+  <% @organisations.each do |key, name| %>
+    <li><%= name %></li>
+  <% end %>
+</ul>
