@@ -7,7 +7,7 @@ namespace :mail do
     desc "Send an email using SendGrid"
     task :send, [:to, :body, :from, :subject] do |t, args|
         args.with_defaults(
-            :from => "noreply@givememydata.org",
+            :from => "noreply@getmydata.org",
             :subject => "Another test email",
         )
         email_helper = EmailService.new
