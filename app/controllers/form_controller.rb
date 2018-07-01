@@ -1,3 +1,5 @@
+require "email_service"
+
 class FormController < ApplicationController
   def show
     @org_name = params["organisation_name"]
@@ -12,6 +14,10 @@ class FormController < ApplicationController
   end
 
   def send_email
+    email_content = params[:email_content]
+    to = 'givememydata_dummyorg@mailinator.com'
+    from = 'noreply@givememydata.org'
 
+    EmailService.new.send(to, from, 'Request for data', email_content)
   end
 end
