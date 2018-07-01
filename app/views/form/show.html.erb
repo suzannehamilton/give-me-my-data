@@ -1,54 +1,41 @@
-<div class="container">
-	<div class="row">
-		<header class="header">
-			<h1>Send a request to <%= @org_name %></h1>
-		</header>
-	</div>
-	<div class="row">
-		<section class="intro">
-      To identify you the organisation will need some basic information about you.
-
-      <p>
-			<!-- Search form -->
-      <%= form_tag("/preview-email", method: 'post') do %>
-        <div class="form-group">
-          <label class="control-label" for="user_name">Your name</label>
-          <input type="text" class="form-control" name="user_name" placeholder="Enter your name">
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="user_email">Email address</label>
-          <input type="email" class="form-control" name="user_email" placeholder="Enter your email">
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="date_of_birth">Date of birth</label>
-          <input class="form-control" id="date_of_birth" name="date_of_birth" placeholder="MM/DD/YYY" type="text"/>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="nhs_number">NHS Number</label>
-          <input class="form-control" id="nhs_number" name="nhs_number" placeholder="Enter your NHS number" type="text"/>
-        </div>
-        <div class="form-group">
-            <label for="user_address">Home address</label>
-            <textarea class="form-control rounded-0" id="user_address" rows="4" placeholder="Enter your home address"></textarea>
-        </div>
-        <div class="form-group">
-          <label class="control-label" for="user_postcode">Postcode</label>
-          <input type="text" class="form-control" name="user_postcode" placeholder="Enter your postcode">
-        </div>
-
-        <%= submit_tag("Submit", class: "btn btn-primary") %>
-      <% end %>
-		</section>
-	</div>
+<div class="row">
+	<header class="header">
+		<h1>Send a request to <%= @org_name %></h1>
+	</header>
 </div>
+<div class="row">
+	<section class="intro">
+    To identify you the organisation will need some basic information about you.
 
+    <p>
+		<!-- Search form -->
+    <%= form_tag("/preview-email", method: 'post') do %>
+      <div class="form-group">
+        <label class="control-label" for="user_name">Your name</label>
+        <input type="text" class="form-control" name="user_name" placeholder="Enter your name">
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="user_email">Email address</label>
+        <input type="email" class="form-control" name="user_email" placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="date_of_birth">Date of birth</label>
+        <input class="form-control" id="date_of_birth" name="date_of_birth" placeholder="MM/DD/YYY" type="text"/>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="nhs_number">NHS Number</label>
+        <input class="form-control" id="nhs_number" name="nhs_number" placeholder="Enter your NHS number" type="text"/>
+      </div>
+      <div class="form-group">
+          <label for="user_address">Home address</label>
+          <textarea class="form-control rounded-0" id="user_address" rows="4" placeholder="Enter your home address"></textarea>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="user_postcode">Postcode</label>
+        <input type="text" class="form-control" name="user_postcode" placeholder="Enter your postcode">
+      </div>
 
-
-
-
-
-
-  <!-- <div class="form-group">
-    <label for="userEmail">Date of birth</label>
-    <input type="email" class="form-control" name="user_email" placeholder="Enter email">
-  </div> -->
+      <%= submit_tag("Submit", class: "btn btn-primary") %>
+    <% end %>
+	</section>
+</div>
