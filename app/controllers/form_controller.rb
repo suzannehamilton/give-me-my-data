@@ -11,9 +11,10 @@ class FormController < ApplicationController
 
       SUBJECT ACCESS REQUEST
 
-      To whom it may concern,
-
       This is a request on behalf of #{params['user_name']} to provide the specified data.
+
+      #{params['user_name']} has requested all medical data.
+      Data should be provided electronically by email.
 
       Personal details:
 
