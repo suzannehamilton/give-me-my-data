@@ -10,6 +10,15 @@ class FormController < ApplicationController
       To whom it may concern,
 
       Please send some data to #{params['user_name']} at #{params['user_email']}.
+
+      Personal details:
+
+      Name: #{params['user_name']}
+      NHS number: #{params['nhs_number']}
+      Date of birth: #{params['date_of_birth']}
+      Address: #{params['user_address']}
+      Postcode: #{params['user_postcode']}
+
     eos
   end
 

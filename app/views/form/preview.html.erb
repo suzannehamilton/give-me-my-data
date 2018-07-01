@@ -1,12 +1,20 @@
-<h1>Email preview</h1>
-
-<p>This email will be sent to the organisation:</p>
-
-<div class="jumbotron email_preview">
-  <%= @email_body %>
+<div class="row">
+  <h1>Email preview</h1>
 </div>
 
-<%= form_tag("/send-email", method: 'post') do %>
-  <input type="hidden" name="email_content" value="<%= @email_body %>>">
-  <%= submit_tag("Send email", class: "btn btn-primary") %>
-<% end %>
+<div class="row">
+  <p>This email will be sent to the organisation:</p>
+</div>
+
+<div class="row">
+  <div class="jumbotron email_preview">
+    <%= @email_body %>
+  </div>
+</div>
+
+<div class="row">
+  <%= form_tag("/send-email", method: 'post') do %>
+    <input type="hidden" name="email_content" value="<%= @email_body %>>">
+    <%= submit_tag("Send email", class: "btn btn-primary") %>
+  <% end %>
+</div>
