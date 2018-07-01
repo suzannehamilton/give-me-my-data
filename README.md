@@ -11,3 +11,8 @@
 - Run `rails db:setup`
 - Run `rails db:migrate`
 - Run `rails server` to start the all
+
+
+## Update server database from csv file
+
+`heroku run rake csv:load`
