@@ -1,4 +1,6 @@
 require "sendgrid-ruby"
+require "email_service"
+
 include SendGrid
 
 namespace :mail do
@@ -8,15 +10,7 @@ namespace :mail do
             :from => "noreply@givememydata.org",
             :subject => "Another test email",
         )
-        from = Email.new(email: args.from)
-        to   = Email.new(email: args.to)
-
-        content = SendGrid::Content.new(type: "text/html", value: args.body)
-        mail    = SendGrid::Mail.new(from, args.subject, to, content)
-        sg      = SendGrid::API.new(api_key: ENV["SENDGRID_API_KEY"])
-
-        response = sg.client.mail._('send').post(request_body: mail.to_json)
-
-        puts response.inspect
+        email_helper = EmailService.new
+        puts email_helper.send(args.to, args.from, args.subject, args.body)
     end
 end
