@@ -7,7 +7,7 @@ class FormController < ApplicationController
     @email_body = <<-eos
       To whom it may concern,
 
-      Please send some data to #{params['user_email']}.
+      Please send some data to #{params['user_name']} at #{params['user_email']}.
     eos
   end
 
