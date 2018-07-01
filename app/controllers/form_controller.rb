@@ -8,6 +8,7 @@ class FormController < ApplicationController
   def preview
     @email_body = <<-eos
       To whom it may concern,
+      #{params['organisation_name']}
 
       SUBJECT ACCESS REQUEST
 
