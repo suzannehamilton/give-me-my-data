@@ -32,7 +32,7 @@ class FormController < ApplicationController
 
   def send_email
     email_content = params[:email_content]
-    to = 'givememydata_dummyorg@mailinator.com'
+    to = 'dummyorganisation@mailinator.com'
     from = 'noreply@givememydata.org'
 
     EmailService.new.send(to, from, 'Request for data', email_content)
