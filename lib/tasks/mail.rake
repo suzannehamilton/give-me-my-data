@@ -10,7 +10,6 @@ namespace :mail do
             :from => "noreply@givememydata.org",
             :subject => "Another test email",
         )
-
         email_helper = EmailService.new
         puts email_helper.send(args.to, args.from, args.subject, args.body)
     end
