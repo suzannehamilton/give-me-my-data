@@ -9,15 +9,21 @@ class FormController < ApplicationController
     @email_body = <<-eos
       To whom it may concern,
 
-      Please send some data to #{params['user_name']} at #{params['user_email']}.
+      SUBJECT ACCESS REQUEST
+
+      To whom it may concern,
+
+      This is a request on behalf of #{params['user_name']} to provide the specified data.
 
       Personal details:
 
       Name: #{params['user_name']}
+      Email: #{params['user_email']}
       NHS number: #{params['nhs_number']}
       Date of birth: #{params['date_of_birth']}
       Address: #{params['user_address']}
       Postcode: #{params['user_postcode']}
+
 
     eos
   end
