@@ -11,7 +11,7 @@ namespace :mail do
         from = Email.new(email: args.from)
         to   = Email.new(email: args.to)
 
-        content = SendGrid::Content.new(type: "text/plain", value: args.body)
+        content = SendGrid::Content.new(type: "text/html", value: args.body)
         mail    = SendGrid::Mail.new(from, args.subject, to, content)
         sg      = SendGrid::API.new(api_key: ENV["SENDGRID_API_KEY"])
 
