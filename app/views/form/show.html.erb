@@ -13,7 +13,7 @@
 
 		<!-- Search form -->
     <%= form_tag("/preview-email", method: 'post') do %>
-			<input type="hidden" name="organisation_name" value=<%= @org_name %>>
+			<input type="hidden" name="organisation_name" value='<%= @org_name %>'>
 
       <div class="form-group">
         <label class="control-label" for="user_name">Your full name</label>
