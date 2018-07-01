@@ -24,6 +24,7 @@ gem 'bootstrap'
 gem 'jquery-rails'
 gem 'bootstrap-glyphicons'
 gem 'flexbox_rb', '~> 0.5'
+gem 'font-awesome-rails'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
