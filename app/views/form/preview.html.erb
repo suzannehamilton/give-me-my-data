@@ -3,7 +3,7 @@
 <p>This email will be sent to the organisation:</p>
 
 <p>
-  <%= @email_body %>
+  <%= @email_body.html_safe %>
 </p>
 
 <%= form_tag("/send-email", method: 'post') do %>
