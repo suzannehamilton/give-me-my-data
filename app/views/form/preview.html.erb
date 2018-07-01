@@ -5,3 +5,8 @@
 <p>
   <%= @email_body %>
 </p>
+
+<%= form_tag("/send-email", method: 'post') do %>
+  <input type="hidden" name="email_content" value="<%= @email_body %>>">
+  <%= submit_tag("Send email", class: "btn btn-primary") %>
+<% end %>

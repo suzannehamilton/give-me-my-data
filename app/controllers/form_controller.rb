@@ -10,4 +10,8 @@ class FormController < ApplicationController
       Please send some data to #{params['user_email']}.
     eos
   end
+
+  def send_email
+
+  end
 end
