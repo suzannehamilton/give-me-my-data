@@ -17,3 +17,33 @@
  .email_preview {
    white-space: pre-line;
  }
+
+
+body {
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.navbar {
+	background-color: #0064b7;
+}
+
+.header {
+	padding: 10px 0;
+}
+
+@media (min-width: 860px) { /* larger than tablet */
+
+}
+
+@media (min-width: 620px) {
+
+}
+
+
+@media (min-width: 300px) {
+
+	.navbar-brand {
+		font-size:0.8rem;
+	}
+}

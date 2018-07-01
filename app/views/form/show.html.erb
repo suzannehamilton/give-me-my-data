@@ -5,6 +5,9 @@
 </div>
 <div class="row">
 	<section class="intro">
+
+    <h3>Your personal information</h3>
+
     To identify you the organisation will need some basic information about you.
 
     <p>
@@ -34,6 +37,68 @@
         <label class="control-label" for="user_postcode">Postcode</label>
         <input type="text" class="form-control" name="user_postcode" placeholder="Enter your postcode">
       </div>
+
+      <p>
+
+      <h3>How do you want the organisation to send your data to you?</h3>
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="receive_by_email">
+        <label class="form-check-label" for="defaultCheck1">
+          By email
+        </label>
+      </div>
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="receive_printed_by_post">
+      <label class="form-check-label" for="defaultCheck1">
+        Printed material by post
+      </label>
+      </div>
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="receive_printed_by_post">
+      <label class="form-check-label" for="defaultCheck1">
+        CD or USB media by post
+      </label>
+      </div>
+      <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="receive_portal">
+      <label class="form-check-label" for="defaultCheck1">
+        By online portal, if it exists
+      </label>
+      </div>
+
+      <p>
+
+
+        <h3>Which data do you want to request?</h3>
+
+        <p>Some organisations may charge you for large or complex requests.
+
+        <p>
+
+        <div class="form-check">
+          <input class="form-check-input" type="radio" value="" id="receive_all_data" name="which_data" checked>
+          <label class="form-check-label" for="defaultCheck1">
+            All my data
+          </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="radio" value="" id="receive_all_since_last_request" name="which_data" >
+        <label class="form-check-label" for="defaultCheck1">
+          Only data since my last request to this organisation
+        </label>
+        </div>
+        <div class="form-check">
+        <input class="form-check-input" type="radio" value="" id="receive_specific" name="which_data">
+        <label class="form-check-label" for="defaultCheck1">
+          A specific part of my health record. Please detail below:
+        </label>
+        <div class="form-group">
+            <textarea class="form-control rounded-0" id="receive_specific_text" rows="4" placeholder="Please give details"></textarea>
+        </div>
+
+
+      <p>
 
       <%= submit_tag("Submit", class: "btn btn-primary") %>
     <% end %>
