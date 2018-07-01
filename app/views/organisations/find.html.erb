@@ -1,18 +1,10 @@
 <div class="row">
-	<header class="header">
-		<h1>Select organisation</h1>
-	</header>
-</div>
-<div class="row">
 	<section class="intro">
-		Search for the organisation from which you wish to request your record.</p>
-
-		<p>For help and advice on how to find your record see our tips and tricks.</p>
+		<p>Search for the organisation from which you wish to request your record.</p>
 
 		<!-- Search form -->
     <%= form_tag("/request-data", method: 'post') do %>
       <div class="form-group">
-        <label for="organisation name">Find an organisation</label>
         <input type="text" name="organisation_name" autocomplete="off" class="form-control organisation-name typeahead" placeholder="Type an organisation name" aria-label="Search for an organisation">
       </div>
       <%= submit_tag("Submit", class: "btn btn-primary") %>
