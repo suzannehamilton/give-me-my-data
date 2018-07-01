@@ -1,7 +1,8 @@
 require "sendgrid-ruby"
-include SendGrid
 
 class EmailService
+  include SendGrid
+
   def send(to_email, from_email, subject, body)
     to = Email.new(email:to_email)
     from = Email.new(email: from_email)
