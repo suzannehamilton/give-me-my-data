@@ -35,6 +35,6 @@ class FormController < ApplicationController
     to = 'dummyorganisation@mailinator.com'
     from = 'noreply@givememydata.org'
 
-    EmailService.new.send(to, from, 'Request for data', email_content)
+    # EmailService.new.send(to, from, 'Request for data', email_content)
   end
 end

@@ -12,6 +12,11 @@
   </div>
 </div>
 
+<div class="alert alert-warning" role="alert">
+  This is a prototype built for the <a href="http://nhshackday.com/">NHS Hackday</a>.
+  It will not email or store your personal data.
+</div>
+
 <div class="row">
   <%= form_tag("/send-email", method: 'post') do %>
     <input type="hidden" name="email_content" value="<%= @email_body %>>">
