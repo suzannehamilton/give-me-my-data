@@ -4,7 +4,6 @@ Rails.application.routes.draw do
 
   root to: 'home#index'
 
-  get '/start', to: 'start#start'
   get '/find', to: 'organisations#find'
   post '/request-data', to: 'form#show'
 
