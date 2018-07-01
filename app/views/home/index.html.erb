@@ -1,17 +1,24 @@
-<div class="row">
-	<header class="header">
-		<h1>Get my data</h1>
-	</header>
+<div class="article-list">
+		<div class="container">
+				<div>
+						<h2 class="text-center">About this service</h2>
+				</div>
+				<div style="margin-right:20%;margin-left:20%;text-align:center;"><p>Healthcare records are incredibly personal to each and every one of us.<br />Many people will suffer and even die just because
+the <b>right information</b><br /> isn&#39;t available at the <b>right time</b>.<br /></p></div>
+				<div class="row articles">
+						<div class="col-sm-6 col-md-4 item">
+								<h3 class="name">The Law is on your side,&nbsp;<br>We are on your side</h3>
+								<p class="description">Since 25th May 2018 the law has been improved,&nbsp;<br>giving individuals greater rights to their information.&nbsp;<br><br>You can send a valid request<br>&nbsp;<strong>through almost any means.</strong>&nbsp;<br><br>The organisation
+										<strong>cannot refuse a request for access</strong> just because it was, for example,&nbsp;<br>requested&nbsp;via email or&nbsp;because&nbsp;<br>you did not use&nbsp;one of their complex forms. <br><br></p><%= link_to "Get my information", "/find", class: "btn btn-primary" %></div>
+						<div class="col-sm-6 col-md-4 item">
+								<h3 class="name">How this helps healthcare<br><br></h3>
+								<p class="description">It has also been proven through various projects that having a copy of your health record improves understanding and communication&nbsp;<br>with healthcare staff, and consequently,&nbsp;<br>the health outcomes.<br><br>The problem is
+										that the NHS is made up of hundreds of organisations, all of which have their own forms and processes to request information, making it hard for patients to navigate.<br><br></p><%= link_to "Read more", "/about", class: "btn btn-primary" %></div>
+						<div
+								class="col-sm-6 col-md-4 item">
+								<h3 class="name">My medical information<br><br></h3><p class="description">Despite the NHS having national in the name<br />- it is presumed this means our records are available across the whole service and all of them can<br />be shared when we need them,<br />regardless of the different NHS organisations.<br /><br />Our records
+are locked in local information silos - which creates huge inefficiencies in the NHS and<br />puts our care at risk.<br /><br />However, as patients we can take matters into our own hands by requesting a copy of our information from each organisation
+so that we have a complete record, <b>available whenever we need it.</b><br /><br /></p><%= link_to "I want to do this now", "/find", class: "btn btn-primary" %></div>
+		</div>
 </div>
-<div class="row">
-	<section class="intro">
-    <p>Healthcare records are incredibly personal to each and every one of us. Many people will suffer and even die because the right information isn't available at the right time.
-
-    <p>Every individual in Europe has a legal right to request their information from an organisation holds about them including the NHS.
-
-
-      <p><%= link_to "Make a request", "/find", class: "btn btn-primary" %></p>
-
-      <p><%= link_to "About this website", "/about", class: "btn btn-primary" %></p>
-	</section>
 </div>
