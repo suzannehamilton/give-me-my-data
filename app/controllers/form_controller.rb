@@ -5,9 +5,9 @@ class FormController < ApplicationController
 
   def preview
     @email_body = <<-eos
-      To whom it may concern,
+      <p>To whom it may concern,</p>
 
-      Please send some data to #{params['user_name']} at #{params['user_email']}.
+      <p>Please send some data to #{params['user_name']} at #{params['user_email']}.</p>
     eos
   end
 
