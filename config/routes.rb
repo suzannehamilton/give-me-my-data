@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   post '/send-email', to: 'form#send_email'
 
   get '/about', to: 'about#about'
+
+  get '/api/organisations', to: 'organisations_api#list'
 end
