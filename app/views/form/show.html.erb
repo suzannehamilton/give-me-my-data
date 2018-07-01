@@ -1,1 +1,9 @@
 <h1>Send a request to <%= @org_name %></h1>
+
+<%= form_tag("/preview-email", method: 'post') do %>
+  <div class="form-group">
+    <label for="userEmail">Email address</label>
+    <input type="email" class="form-control" name="user_email" placeholder="Enter email">
+  </div>
+  <%= submit_tag("Submit", class: "btn btn-primary") %>
+<% end %>

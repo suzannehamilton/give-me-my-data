@@ -15,7 +15,7 @@
       <%= form_tag("/request-data", method: 'post') do %>
         <div class="form-group">
           <label for="organisation name">Find an organisation</label>
-          <input type="text" name="organisation_name" class="form-control organisation-name typeahead" aria-describedby="organisationName" placeholder="Type an organisation name" aria-label="Search for an organisation">
+          <input type="text" name="organisation_name" class="form-control organisation-name typeahead" placeholder="Type an organisation name" aria-label="Search for an organisation">
         </div>
         <%= submit_tag("Submit", class: "btn btn-primary") %>
       <% end %>
